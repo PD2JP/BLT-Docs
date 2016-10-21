@@ -1,31 +1,31 @@
-# Payday 2 BLT Documentation
+# Payday2 BLT Documentation JP
 
-This is the documentation for the Payday 2 BLT Lua Hook.  
+このドキュメントはPayday2 BLT Lua Hookの日本語版説明です。  
 
-All of the included Lua libraries are documented here, so that you can learn how to use them.  
+全てのLuaライブラリについてがここに記載されています。どのようにライブラリを使用するかを学ぶことができます。
 
-- Globals
-	- [Global Variables](globals/variables.md)
-	- [Global Functions](globals/functions.md)
-	- [Files and IO](globals/file.md)
-	- [Debug Console](globals/console.md)
-- Mods
-	- [Mod Definition File](mods/definition.md)
-	- [Automatic Updates](mods/updates.md)
-	- [Mod Manager](mods/manager.md)
+- グローバル
+	- [グローバル変数](globals/variables.md)
+	- [グローバル関数](globals/functions.md)
+	- [ファイルIO](globals/file.md)
+	- [デバッグコンソール](globals/console.md)
+- Mod
+	- [Mod定義ファイル](mods/definition.md)
+	- [自動更新](mods/updates.md)
+	- [Modマネージャー](mods/manager.md)
 - Lua
-	- [Localization](lua/localization.md)
-	- [Hooks](lua/hooks.md)
-	- [Delayed Calls](lua/delayed_calls.md)
-	- [Notifications](lua/notifications.md)
-	- [QuickMenu](lua/quick_menu.md)
-	- [JSON](lua/json.md)
-	- [Utilities](lua/utils.md)
-- Menus
-	- [Menu Helper](lua/menu/menu_helper.md)
-	- [Menu Helper Hooks](lua/menu/menu_helper_hooks.md)
-	- [Json Menus](lua/menu/json_menu.md)
-- Networking
-	- [LuaNetwork](lua/network/network.md)
-	- [Hooks](lua/network/hooks.md)
-	- [Extensions](lua/network/extensions.md)
+	- [ローカライゼーション](lua/localization.md)
+	- [Hook](lua/hooks.md)
+	- [遅延呼び出し](lua/delayed_calls.md)
+	- [通知](lua/notifications.md)
+	- [クイックメニュー](lua/quick_menu.md)
+	- [Json](lua/json.md)
+	- [ユーティリティ](lua/utils.md)
+- メニュー
+	- [メニューヘルパー](lua/menu/menu_helper.md)
+	- [メニューヘルパーHook](lua/menu/menu_helper_hooks.md)
+	- [Jsonメニュー](lua/menu/json_menu.md)
+- ネットワーク
+	- [Luaネットワーク](lua/network/network.md)
+	- [Hook](lua/network/hooks.md)
+	- [拡張機能](lua/network/extensions.md)
