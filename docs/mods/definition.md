@@ -1,5 +1,5 @@
 
-# Mod Definition File
+# Mod定義ファイル
 
 Your mod definition file is what the Payday 2 BLT uses to load your mod. It is a json-formatted text file in your mod directory.  
 To setup your definition, simply create a text file `mod.txt` in your mod directory, and setup your required basic details, hooks,
@@ -7,16 +7,16 @@ persist-scripts, and keybinds.
 
 ---
 
-### Base Mod Definition
+### 基本的なMod定義
 
-The base definition for your mod. Contains the basic information of your mod.  
+あなたのModの基本的な定義。 あなたのModの基本的な情報が含まれます。  
 
-`name` The friendly name of your mod.  
-`description` A description of your mod, and what it does.  
-`author` You, your collaborators, anybody who worked on the mod.  
-`contact` Some form of contact details for your users to contact you from.  
-`version` A friendly version number that will displayed in the in-game mod manager.  
-`priority` An integer, from 0 to 1000, that determines the order in which mods load. This should only be used for mods which act as dependencies for other mods.  
+`name` Mod名 (わかりやすい物が良いです)  
+`description` Modの説明 Modが何をするかなど。  
+`author` あなたや貢献者などModを作るのに関わった人。  
+`contact` Mod利用者があなたに連絡するための連絡先。  
+`version` わかりやすいModのバージョン。ゲーム内のModマネージャーに表示されます。  
+`priority` 0 から 1000の間の数値。他のmodとの読み込み順を決定するために使用されます。依存しているmodがある際に使用するべきです。  
 
 	{
 		"name" : "An Example Mod",
@@ -63,7 +63,7 @@ Identical to `Hooks`, except that these will run **before** the Payday 2 script 
 		}
 	]
 
-### Persist Scripts
+### 永続的なスクリプト
 
 _Previous Persist-Scripts in PD2Hook.yml_  
 A script in `script_path` which is run every frame until the global variable specified in `global` is set to anything other than false or nil.  
@@ -83,7 +83,7 @@ A script in `script_path` which is run every frame until the global variable spe
 		}
 	]
 
-### Json-Keybinds
+### Jsonキーバインド
 
 _Previously Keybinds in PD2Hook.yml_  
 A script to run when a key is pressed. These keybinds can be customized in-game, instead of being set to a specific hard-coded key.  
@@ -110,7 +110,7 @@ Use `false` if you wish to just type a name and description in.
 		}
 	]
 
-### Complete Example
+### 完全な記述例
 
 	{
 		"name" : "An Example Mod",

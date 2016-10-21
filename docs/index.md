@@ -15,7 +15,7 @@
 	- [Modマネージャー](mods/manager.md)
 - Lua
 	- [ローカライゼーション](lua/localization.md)
-	- [Hook](lua/hooks.md)
+	- [Hooks](lua/hooks.md)
 	- [遅延呼び出し](lua/delayed_calls.md)
 	- [通知](lua/notifications.md)
 	- [クイックメニュー](lua/quick_menu.md)
@@ -23,9 +23,9 @@
 	- [ユーティリティ](lua/utils.md)
 - メニュー
 	- [メニューヘルパー](lua/menu/menu_helper.md)
-	- [メニューヘルパーHook](lua/menu/menu_helper_hooks.md)
+	- [メニューヘルパーHooks](lua/menu/menu_helper_hooks.md)
 	- [Jsonメニュー](lua/menu/json_menu.md)
 - ネットワーク
 	- [Luaネットワーク](lua/network/network.md)
-	- [Hook](lua/network/hooks.md)
+	- [Hooks](lua/network/hooks.md)
 	- [拡張機能](lua/network/extensions.md)

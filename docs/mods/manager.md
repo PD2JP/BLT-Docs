@@ -1,5 +1,5 @@
 
-# PaydayMods Mod Manager
+# PaydayMods Modマネージャー
 The online Mod Manager is what allows for all mods using the Payday 2 BLT to take advantage of the automatic updates system.
 This is what is used to publish new versions of your mod to your users without them having to manually download and install a new version.
 
