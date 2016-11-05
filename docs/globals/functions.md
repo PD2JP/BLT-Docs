@@ -1,7 +1,7 @@
 
 ### log( str )
-Prints a string to the developer console, and saves it in the log file.  
-`str` The string to be logged
+文字列をデベロッパーコンソールに表示し、ログファイルに記録します。  
+`str` この文字列は記録されます。
 
 	log( "Hello World!" )
 	log( tostring(managers.player:player_unit():key()) )

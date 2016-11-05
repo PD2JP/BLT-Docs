@@ -1,23 +1,26 @@
 
-# Delayed Calls
+# 遅延呼び出し
 
-Delayed Calls are function calls which can be delayed by a set amount of time. They are delayed by a time value in seconds, if you want to delay a call until a specific event happens, or another function is ran, you may want to use [`Hooks`](hooks.md) instead.  
+遅延呼び出しは設定された時間分だけ関数の呼び出しを遅延させることができます。  
+この機能は秒数のみで指定することができます。
+もし、あなたが特定のイベントが発生したときや他の関数が走ったときなどに実行をさせたいならば [`Hooks`](hooks.md) を代わりに使うと良いでしょう。 
 
 ---
 
 ### DelayedCalls:Add( id, time, func )
-Adds a delayed call that will automatically be ran after the time has expired.  
-`id` The unique identifier of this delayed call.  
-`time` A time value, in seconds, that the function `func` should run after.  
-`func` The function that should be ran if `time` passes.  
+指定された秒数が経過後、自動的に実行される 遅延呼び出し を追加します。  
+`id` この遅延呼び出しのユニークな名前です。  
+`time` 遅延させる秒数です。 `func` が指定秒数経過後に実行されます。  
+`func` `time` で指定した秒数が経過後に実行される関数です。  
 
 	DelayedCalls:Add( "DelayedCallsExample", 5, function()
 		log("This will be called after 5 seconds.")
 	end )
 
 ### DelayedCalls:Remove( id )
-Removes a delayed call with the identifier that matches `id`. If the delayed call does not exist, or has expired, this function does nothing.  
-`id` The unique identifier of the delayed call to attempt to remove.  
+指定された `id` を持つ 遅延呼び出し を削除します。  
+`id` が存在しない場合やすでに実行されていた場合、この関数は何もしません。  
+`id` 削除する 遅延呼び出し のユニークな名前です。  
 
 	DelayedCalls:Remove( "DelayedCallsExample" )
 
