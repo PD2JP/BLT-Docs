@@ -7,8 +7,8 @@
 - グローバル
 	- [グローバル変数](globals/variables.md)
 	- [グローバル関数](globals/functions.md)
-	- ✔ [ファイルIO](globals/file.md)
-	- ･･･ [デバッグコンソール](globals/console.md)
+	- [ファイルIO](globals/file.md)
+	- [デバッグコンソール](globals/console.md)
 - Mod
 	- [Mod定義ファイル](mods/definition.md)
 	- [自動更新](mods/updates.md)
@@ -29,9 +29,3 @@
 	- [Luaネットワーク](lua/network/network.md)
 	- [Hooks](lua/network/hooks.md)
 	- [拡張機能](lua/network/extensions.md)
-
-```
-✔: 翻訳されています。
-･･･: 翻訳途中です。
-✖: 翻訳されていません。
-```
