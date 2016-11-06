@@ -7,18 +7,18 @@
 	log( tostring(managers.player:player_unit():key()) )
 
 ### dohttpreq( url, callback(data, id), [progress_callback(id, bytes, total_bytes)] )
-Performs a HTTP/S request to the specified URL. If successful, returns any retrieved data to the callback.  
-`url` The URL to attempt to retrieve data from.  
-`returns` An ID for the current HTTP request.  
+指定したURLへの HTTP/S リクエストを実行します。 成功した場合、取得されたデータをコールバックに返します。  
+`url` リクエストを実行するURL。  
+`returns` HTTP/SリクエストのID。  
 
-`callback(data, id)` A function to run when data is retrieved from the URL.  
-`callback: data` The data retrieved from the server, returned as a string.  
-`callback: id` The ID of the HTTP request.  
+`callback(data, id)` データが取得された場合に実行される関数です。  
+`callback: data` サーバーから返されたデータ。String型で返されます。  
+`callback: id` HTTP/SリクエストのID。  
 
-`progress_callback(id, bytes, total_bytes)` A function to run when the HTTP request reports back its progress. It is optional.  
-`progress_callback: id` The ID of the HTTP request which is reporting its progress.  
-`progress_callback: bytes` The current amount of bytes which have been retrieved.  
-`progress_callback: total_bytes` The total amount of bytes which must be downloaded to complete the HTTP request.  
+`progress_callback(id, bytes, total_bytes)` HTTP/Sリクエストが進捗状況を返すときにこの関数が実行されます。 これはオプションです。  
+`progress_callback: id` 進捗状況を返しているHTTP/SリクエストのID。  
+`progress_callback: bytes` 受信した現在のバイト数。  
+`progress_callback: total_bytes` HTTP/Sリクエストを完了するために必要なダウンロードの合計バイト数。  
 
 	dohttpreq( "http://google.com/", function(data, id)
 		log( "Retrieved server data:\n" .. data )
@@ -34,9 +34,9 @@ Performs a HTTP/S request to the specified URL. If successful, returns any retri
 	)
 
 ### unzip( zip_file, extract_dir )
-Unzips the contents of a specified `zip_file` and places all contents in the directory `extract_dir`. Unzipping archives is slow and is **not** multithreaded, and should only be done during the menu state.  
-`zip_file` The zip archive which you wish to extract the contents of.  
-`extract_dir` The directory where the contents of ther archive `zip_file` should be extracted to.  
+指定された `zip_file` を `extract_dir` に解凍します。 解凍速度は遅く、マルチスレッド処理では **ありません** 。また、メニューを開いている間のみに行われるべきです。  
+`zip_file` 解凍したいZIPファイル。  
+`extract_dir` ZIPファイルの解凍先。  
 
 	local zip = "mods/base/downloads/goonmod.zip"
 	local mods_folder = "mods/"
