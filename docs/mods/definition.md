@@ -11,22 +11,22 @@ persist-scripts, and keybinds.
 
 あなたのModの基本的な定義。 あなたのModの基本的な情報が含まれます。  
 
-`name` Mod名 (わかりやすい物が良いです)  
-`description` Modの説明 Modが何をするかなど。  
-`author` あなたや貢献者などModを作るのに関わった人。  
-`contact` Mod利用者があなたに連絡するための連絡先。  
-`version` わかりやすいModのバージョン。ゲーム内のModマネージャーに表示されます。  
-`priority` 0 から 1000の間の数値。他のmodとの読み込み順を決定するために使用されます。依存しているmodがある際に使用するべきです。  
-
-	{
-		"name" : "An Example Mod",
-		"description" : "My example mod which doesn't actually do anything.",
-		"author" : "James Wilkinson",
-		"contact" : "jw@jameswilko.com",
-		"version" : "1.0",
-		"priority" : 10
-	}
-
+* `name`: Mod名 (わかりやすい物が良いです)  
+* `description`: Modの説明 Modが何をするかなど。  
+* `author`: あなたや貢献者などModを作るのに関わった人。  
+* `contact`: Mod利用者があなたに連絡するための連絡先。  
+* `version`: わかりやすいModのバージョン。ゲーム内のModマネージャーに表示されます。  
+* `priority`: 0 から 1000の間の数値。他のmodとの読み込み順を決定するために使用されます。依存しているmodがある際に使用するべきです。  
+```json
+{
+	"name": "テストMOD",
+	"description": "何もしないテストMOD",
+	"author": "James Wilkinson",
+	"contact": "jw@jameswilko.com",
+	"version": "1.0",
+	"priority": 10
+}
+```
 ### Hooks
 
 _Previously Post-Require Scripts in PD2Hook.yml_  
@@ -111,38 +111,39 @@ Use `false` if you wish to just type a name and description in.
 	]
 
 ### 完全な記述例
-
-	{
-		"name" : "An Example Mod",
-		"description" : "My example mod which doesn't actually do anything.",
-		"author" : "James Wilkinson",
-		"contact" : "jw@jameswilko.com",
-		"version" : "1.0",
-		"hooks" : [
-			{ 	
-				"hook_id" : "lib/setups/gamesetup",
-				"script_path" : "PostGameSetup.lua"
-			},
-			{ 	
-				"hook_id" : "lib/managers/menu/blackmarketgui",
-				"script_path" : "BlackMarketGUIStuff.lua"
-			}
-		],
-		"persist_scripts" : [
-			{
-				"global" : "MyGlobalValue",
-				"script_path" : "TestPersistScript.lua"
-			}
-		],
-		"keybinds" : [
-			{
-				"keybind_id" : "keybind_example_test",
-				"name" : "Test Keybind",
-				"description" : "An example keybind for demonstration"
-				"script_path" : "test.lua",
-				"run_in_menu" : true,
-				"run_in_game" : true,
-				"localized" : false
-			}
-		]
-	}
+```json
+{
+	"name": "テストMOD",
+	"description": "何もしないテストMOD",
+	"author": "James Wilkinson",
+	"contact": "jw@jameswilko.com",
+	"version": "1.0",
+	"hooks": [
+		{
+			"hook_id": "lib/setups/gamesetup",
+			"script_path": "PostGameSetup.lua"
+		},
+		{
+			"hook_id": "lib/managers/menu/blackmarketgui",
+			"script_path": "BlackMarketGUIStuff.lua"
+		}
+	],
+	"persist_scripts" : [
+		{
+			"global": "MyGlobalValue",
+			"script_path": "TestPersistScript.lua"
+		}
+	],
+	"keybinds" : [
+		{
+			"keybind_id": "keybind_example_test",
+			"name": "Test Keybind",
+			"description": "An example keybind for demonstration",
+			"script_path": "test.lua",
+			"run_in_menu": true,
+			"run_in_game": true,
+			"localized": false
+		}
+	]
+}
+```
